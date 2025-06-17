@@ -1,10 +1,20 @@
-#include <iostream> 
- using namespace std ; 
+#include <iostream>
+using namespace std;
 
- int main (){ 
-    int a , b , c ; 
-    cout << "Input three numbers :"; 
-    cin >> a >> b >> c ; 
+int main() {
+   
+    bool LoveMe = true;
+    bool Baby = false;
+
     
-    cout << "The average is " <<  (a+b+c)/3 <<"." ; 
- }
+    cout << " Say that you love me  " << LoveMe << endl;     
+    cout << "We are just friends " << Baby << endl;     
+
+    int x = 2;
+    int y = 5;
+
+    bool result = x < y;
+    cout << "Is x less than y? " << result << endl;       
+
+    return 0;
+}

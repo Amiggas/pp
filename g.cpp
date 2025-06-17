@@ -1,22 +1,25 @@
-#include <iostream> 
- using namespace std ; 
+#include <iostream>
+#include <string>
 
- int main (){
-    int p , r , t ; 
+using namespace std;
+
+int main() {
+   
+    string greeting1 = "Hello" ;
+    char greeting2[] = "Hello" ;
+
+    
+    string myString = "Hello" ;
+    cout << "First character of myString: " << myString[0] << endl;
 
    
-    cout << "Input principal amount :" ;
-    cin >> p ;
-    cout << endl ;
-    
-    cout << "Input rate of interest :" ;
-    cin >> r ;
-    cout << endl ; 
+    string name;
+    cout << "\nEnter your full name: ";
+    getline(cin, name);
 
-     cout << "Input time (in years) :" ;
-    cin >> t ;
-    
-    cout << "Simple Interst is " << (p*r*t)/100 <<"." ;
+    cout << "\n\tWelcome, \"" << name << "\"!" << endl;
+    cout << "C++ string greeting: " << greeting1 << endl;
+    cout << " C-style string greeting: " << greeting2 << endl;
 
-
- }
+    return 0;
+}

@@ -1,10 +1,16 @@
-#include <iostream> 
- using namespace std ; 
+#include <iostream>
+#include <string>
 
- int main (){
-    int n ; 
-    cout << "Input an integer : " ; 
-    cin >> n ; 
+using namespace std;
 
-    cout << "The square is " << n*n << "." ; 
- }
+int main() {
+    string name;
+
+    cout << "Enter your full name: ";
+    getline(cin, name);
+
+    cout << "\n\tWelcome, \"" << name << "\"!\n";
+    cout << "This is an example with special characters like \\n and \\t." << endl;
+
+    return 0;
+}

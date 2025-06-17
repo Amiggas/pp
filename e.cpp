@@ -1,10 +1,21 @@
-#include <iostream> 
- using namespace std ; 
+#include <iostream>
+using namespace std;
 
- int main (){
-    int t ; 
-    cout << "Input temperature in Celsius" ; 
-    cin  >> t ; 
+int main() {
+    string name;
+    cout << "Enter your name: ";
+    cin >> name;
+    cout << "Hello, " << name << "!" << endl;
 
-    cout << "Temperature in Fahrenheit:" << (t * 9/5) + 32 ;
- }
+    string pass;
+    cout << "Input a password (not less than 6 characters): ";
+    cin >> pass;
+
+    if (pass.size() >= 6) {
+        cout << "Password accepted." << endl;
+    } else {
+        cout << "Password is too short." << endl;
+    }
+
+    return 0;
+}
